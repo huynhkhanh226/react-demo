@@ -1,0 +1,124 @@
+$bgcolor: lightblue;
+$bgImage: "../../assets/images/button_bg.svg";
+$bgImageMenu: "../../assets/images/bg.svg";
+$textcolor: #333;
+$fontsize: 13px !important;
+$family: "Source Sans Pro", sans-serif;
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+
+body,
+html {
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* Use the variables */
+#root {
+  background-color: #F3F3F3;
+  background-attachment: fixed;
+  //background-image: none !important;
+  color: $textcolor;
+  font-size: $fontsize;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100% !important;
+  overflow: auto;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.home-page{
+     min-height: calc(100% - 600px);
+    .main-menu{
+        .navbar{
+            background-image: url($bgImage);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            .nav-item{
+                a{
+                    color: $red !important;
+                }
+                .disabled{
+                    color: $gray !important;
+                }
+            }
+            .navbar-nav{
+                display: contents;
+            }
+            
+        }
+        .main-menu-dropdown{
+            .dropdown-menu{
+                top: 114%;
+                border-radius: 0px;
+                font-size: 12px;
+                .nav-link{
+                    padding: 0px;
+                }
+            }
+        }
+    }
+    .top-menu{
+        .navbar{
+            .dropdown-menu-right{
+                top: 116% !important;
+                font-size: $fontsize;
+                font-family: $family;
+                border-radius: none;
+                border: none;
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                border-radius: 5px 0px 5px 5px !important;
+                
+                .dropdown-menu-notify{
+                    background-image: url($bgImageMenu) !important;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    button:hover{
+                        background: transparent;
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+    .nav-item{
+        a:after{
+            display: none !important
+        }
+    }
+}

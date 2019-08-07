@@ -1,0 +1,185 @@
+$bgcolor: lightblue;
+$bgImage: "../../assets/images/bg.svg";
+$buttonBg: "../../assets/images/button_bg.svg";
+$textcolor: #333;
+$fontsize: 13px;
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+
+body,
+html {
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif  !important;
+  font-size: $fontsize !important;
+  
+}
+/* Use the variables */
+#root {
+  //background-color: $bgcolor;
+  background-image: url($bgImage);
+  background-attachment: fixed;
+  color: $textcolor;
+  font-size: $fontsize;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.div-login{
+  min-height: calc(100vh - 65px);
+}
+.login-container {
+  margin-top: 10%; //calc(100%/2 - 500px);
+  opacity: 0.8;
+  .card-footer:last-child {
+    border-radius: 0px !important;
+  }
+  .card-footer{
+    background-image: url($buttonBg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0px;
+    border-top: none;
+    button{
+      float: right;
+      color: $white;
+      span{
+        float: right;
+      }
+    }
+  }
+  .card{
+    border: none;
+    border-radius: none !important;
+  }
+  .logo-solid {
+    padding: 5px 14px 14px 14px;
+    border: 4px dotted #ccc;
+    border-radius: 50%;
+    margin-top: 25px;
+  }
+  img{
+    //animation: App-logo-spin infinite 20s linear;
+    margin-bottom: 25px;
+  }
+  .logo-dotted {
+    padding: 5px 14px 14px 14px;
+    border: 1px dotted #ccc;
+    border-radius: 50%;
+    
+  }
+  .form-control{
+    border: none;
+    border-bottom: 1px solid $primary;
+    border-radius: 0px;
+  }
+  .form-control:focus{
+    border: none;
+    border-bottom: 1px solid $orange;
+    border-radius: 0px;
+    box-shadow: none;;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+  }
+  input{
+    padding-left: 0px;
+  }
+  button{
+    width: 100%;
+  }
+}
+
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ddd;
+  font-size: 12px;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ddd;
+  font-size: 12px;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ddd;
+  font-size: 12px;
+}
+
+.help-block{
+  color: $red
+}
+.margin-bottom_0{
+  margin-bottom: 0px;
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+  .login-container {
+    margin-top: 0%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+}
